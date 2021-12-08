@@ -60,6 +60,9 @@ public class Day7 {
 	 * Simply find derivative of equation, notice that it is absolute and derivative is
 	 * sgn(x).  Then rearrange and find that (where x = mean of values) x - 1/2 <= k <= x + 1/2
 	 * Then, take ceiling of lower and floor of upper and compare
+	 * 
+	 * Another way: Taking derivative and finding you can adjust mean with (num_crabs - 2*(num_values_smaller_than_mean))/(2*num_crabs)
+	 * Which is actually the same as above
 	 * @return
 	 */
 	public static int answer2() {
